@@ -1,5 +1,5 @@
 genero = input("Olá meu nome é HeySeries!\nQual seu genero preferido de serie? \n")
-if genero == "teen":
+if genero == "teen" or genero == "Teen":
     sinopse = input("Pra este genero, eu indico: Skins; Gossip Girl; e Pretty Little Liars.\nGostaria de que eu lhe contasse a sinopse de alguma dessas series? (responda com o nome da serie ou com'nao')\n")
     if sinopse == "Skins" or sinopse == "skins":
         print("Skins foi ao ar entre 2007 e 2013 e se centra em um grupo de\nadolescentes britânicos que vivem em conflito com seus\npais e professores, enquanto também tentam se entender entre si.\nA cada duas temporadas mudam os personagens e as histŕias de suas\nvidas; chamam esta troca de 'geracao'.")
@@ -11,7 +11,7 @@ if genero == "teen":
         print ("Ok, mas espero que voce assista uma dessas series hein! :)")
     else:
         print ("Eu não conheço este comando. Por favor, reinicie o programa :(")
-elif genero == "romance":
+elif genero == "romance" or genero == "Romance":
     sinopse = input ("Para este genero, eu indico: Eu, tu e ela; Greys Anatomy; e Jane The Virgin.\nGostaria de que eu lhe contasse a sinopse de alguma dessas series? (responda com o nome da serie ou com'nao')\n")
     if sinopse == "Eu, tu e ela" or sinopse == "eu, tu e ela" or sinopse == "eu tu e ela":
         print("Um casal que se ama, mas com a relação caindo na mesmice,\nacabam envolvendo uma terceira pessoa na relação, tudo\ntoma rumos inesperados quando ambos se apaixonam pela garota.")
@@ -23,7 +23,7 @@ elif genero == "romance":
         print ("Ok, mas espero que voce assista uma dessas series hein! :)")
     else:
         print ("Eu não conheço este comando. Por favor, reinicie o programa :(")
-elif genero == "comedia":
+elif genero == "comedia" or genero == "Comedia":
     sinopse = input ("Para este genero, eu indico: Friends; The Big Bang Theory; e How I Met Your Mother.\nGostaria de que eu lhe constasse a sinopse de alguma dessas series?(responda com o nome da serie ou com 'nao')\n")
     if sinopse == "Friends" or sinopse == "friends":
         print ("Um grupo de 6 amigos estão sempre a se encontrar,\ncontando suas novidades do dia e tudo mais.\nApesar de todos serem adultos, não são nem um pouco maduros.")
@@ -35,9 +35,9 @@ elif genero == "comedia":
         print ("Ok, mas espero que voce assista uma dessas series hein! :)")
     else:
         print ("Eu não conheço este comando. Por favor, reinicie o programa :(")
-elif genero == "ação" or genero == "acao":
+elif genero == "ação" or genero == "acao" or genero == "Ação" or genero == "Acao":
     sinopse = input ("Para este genero, eu indico: Titãs; Jessica Jones; e La Casa de Papel.\nGostaria de que eu lhe contasse a sinopse de alguma dessas series? (responda com o nome da serie ou com'nao')\n")
-    if sinopse == "titãs" or sinopse == "titas" or sinopse == "Titas" or sinopse == "titãs":
+    if sinopse == "titãs" or sinopse == "titas" or sinopse == "Titas" or sinopse == "Titãs":
         print ("Baseado na equipe Novos Titãs, da DC Comics,\na série mostra um grupo de jovens heróis que\nunem suas forças na luta contra o mal.")
     elif sinopse == "Jessica Jones" or sinopse == "jessica jones":
         print ("Desde que sua curta vida como super-heroína acabou de forma trágica,\nJessica Jones vem reconstruindo sua carreira e passou a levar a vida\ncomo detetive particular no bairro de Hell's Kitchen, em Nova York,\nna sua própria agência de investigações, a Alias Investigations.\nTraumatizada por eventos anteriores de sua vida, ela sofre de Transtorno de\nEstresse Pós-Traumático, e tenta fazer com que seus super-poderes\npassem despercebidos pelos seus clientes. Mas, mesmo tentando\nfugir do passado, seus demônios particulares vão voltar a perseguí-la,\nna figura de Zebediah Kilgrave, um obsessivo vilão que fará de tudo para\nchamar a atenção de Jessica.")
@@ -47,7 +47,7 @@ elif genero == "ação" or genero == "acao":
         print ("Ok, mas espero que voce assista uma dessas series hein :)")
     else:
         print ("Eu não conheço este comando. Por favor, reinicie o programa :(")
-elif genero == "suspense":
+elif genero == "suspense" or genero == "Suspense":
     sinopse = input ("Para este genero, eu indico: Scandal; Hannnibal; e Dark.\nGostaria que eu lhe contasse a sinopse de alguma dessas series? (responda com o nome da serie ou com 'não'\n")
     if sinopse == "Scandal" or sinopse == "scandal":
         print ("Olivia Pope passa seu tempo protegendo a reputação das personalidades\nestadunidenses da elite, evitando que nasçam grandes escândalos.\nA moça decide abrir uma empresa após deixar seu trabalho na\nCasa Branca, mas não consegue se desvencilhar totalmente de seu\npassado profissional. Sua equipe é formada por Harrison Wright,\nQuinn Perkins, Stephen Finch, Abby Whelan  e o hacker Huck Finn.")
@@ -59,8 +59,8 @@ elif genero == "suspense":
         print ("Ok, mas espero que voce assista uma dessas series hein :)")
     else:
         print ("Eu não conheço este comando. Por favor, reinicie o programa :(")
-elif genero == "terror":
-    genero = input ("Para este genero, eu indico: Santa Clarita Diet; Scream; e Marianne.\nGostaria que eu lhe contasse a sinopse de alguma dessas series? (responda om o nome da serie ou com 'nao')\n")
+elif genero == "terror" or genero == "Terror":
+    sinopse = input ("Para este genero, eu indico: Santa Clarita Diet; Scream; e Marianne.\nGostaria que eu lhe contasse a sinopse de alguma dessas series? (responda om o nome da serie ou com 'nao')\n")
     if sinopse == "santa clarita diet" or sinopse == "Santa Clarita Diet":
         print ("Sheila e Joel são dois corretores de imóveis que compartilham\nmuito mais do que a mesma profissão. Casados e com uma filha adolescente,\neles estão descontentes com a vida que levam em Santa Clarita,\nno subúrbio de Los Angeles. O destino deles começa a mudar quando\nSheila passa por uma mudança radical.")
     elif sinopse == "Scream" or sinopse == "scream":
@@ -71,7 +71,7 @@ elif genero == "terror":
         print("Ok, mas espero que voce assista uma dessas series hein :)")
     else:
         print ("Eu não conheço este comando. Por favor, reinicie o programa :(")
-elif genero == "documentario":
+elif genero == "documentario" or genero == "Documentario":
     sinopse = input ("Para este genero, eu indico; The Keepers; Wild Wild Country; e Minimalismo.\nGostaria que eu lhe contasse a sinopse de alguma dessas series? (responda com o nome da serie ou com 'não')\n")
     if sinopse == "The keepers" or sinopse == "the keepers":
         print("Irmã Cathy Cesnik, uma freira e professora muito querida por todos,\ndesapareceu em novembro de 1969. Seu corpo só fora encontrado\ndois meses depois, e trouxe à tona diversos segredos envolvendo a Igreja e uma\nsérie de crimes que aconteceram na cidade de Baltimore,\nnos Estados Unidos. As investigações, no entanto, não foram concluídas e o\ncaso continua um mistério.")
@@ -83,7 +83,7 @@ elif genero == "documentario":
         print ("Ok, mas espero que voce assista uma dessas series hein :)")
     else:
         print ("Eu não conheço este comando. Por favor, reinicie o programa :(")
-elif genero == "drama":
+elif genero == "drama" or genero == "Drama":
     sinopse = input ("Para este genero, eu indico: 13 Reason Why; The Society; e Sense 8.\nGostaria que eu lhe contasse a sinopse de alguma dessas series? (responda com o nome da serie ou com 'não')\n")
     if sinopse == "13 Reason Why" or sinopse == "13 reason why":
          print ("Uma caixa de sapatos é enviada para Clay por Hannah, sua amiga e\npaixão platônica secreta de escola. O jovem se surpreende ao ver o remetente,\npois Hannah acabara de se suicidar. Dentro da caixa, há várias fitas\ncassete, onde a jovem lista os 13 motivos que a levaram a interromper\nsua vida - além de instruções para elas serem passadas entre os demais envolvidos.")
@@ -107,7 +107,7 @@ elif genero == "ficção cientifica" or genero == "ficcao" or genero == "ficcao 
         print("Ok, mas espero que voce assista uma dessas series hein :)")
     else:
         print("Eu não conheço este comando. Por favor, reinicie o programa :(")
-elif genero == "anime":
+elif genero == "anime" or genero == "Anime":
     sinopse = input ("Para este genero, eu indico: Yu-Gi-Oh!; Naruto; e Death Note.\nGostaria que eu lhe contasse a sinopse de alguma dessas series? (responda com o nome da serie ou com 'não').\n")
     if sinopse == "Yu-Gi-Oh!" or sinopse == "yu gi oh" or sinopse == "yugioh":
         print ("O jovem estudante do ensino médio Yugi Muto derrota o campeão mundial,\nSeto Kaiba, em um duelo de cartas com a misteriosa ajuda do\nquebra-cabeça Millenium. Em razão de sua vitória inesperada, Yugi se torna\nfamoso em todo o mundo e passa a participar de outros duelos para salvar\nos amigos e a família.")
