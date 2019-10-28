@@ -1,13 +1,17 @@
 import requests
-results = requests.get('https://www.imdb.com/search/title/?num_votes=100000,&sort=user_rating,desc&title_type=tv_series&')
+
+results = requests.get(
+    'https://www.imdb.com/search/title/?num_votes=100000,&sort=user_rating,desc&title_type=tv_series&')
 from bs4 import BeautifulSoup
+
 title = 'a'
 notes = 'b'
 year = 'c'
 with open('listadeseries.csv', 'w') as s:
     s.write('SERIES;NOTAS;ANO DE LANÇAMENTO\n')
 
-def scrap ():
+
+def scrap():
     soup = BeautifulSoup(results.text, 'html.parser')
 
     title = soup.findAll('h3', class_='lister-item-header')
@@ -20,12 +24,17 @@ def scrap ():
     with open('listadeseries.csv', 'a') as s:
         i = 0
         for i in range(0, len(title)):
-            s.write(title[i].text.replace(',', '').replace(';', '') + ';' + notes[i].text + ';' + year[i].text[0:5].replace('(', '').replace(')', '')+'\n')
+            s.write(
+                title[i].text.replace(',', '').replace(';', '') + ';' + notes[i].text + ';' + year[i].text[0:5].replace(
+                    '(', '').replace(')', '') + '\n')
+
+
 scrap()
 
-results = requests.get('https://www.imdb.com/search/title/?title_type=tv_series&num_votes=100000,&sort=user_rating,desc&start=51&ref_=adv_nxt')
+results = requests.get(
+    'https://www.imdb.com/search/title/?title_type=tv_series&num_votes=100000,&sort=user_rating,desc&start=51&ref_=adv_nxt')
 scrap()
 
-results = requests.get('https://www.imdb.com/search/title/?title_type=tv_series&num_votes=100000,&sort=user_rating,desc&start=101&ref_=adv_nxt')
+results = requests.get(
+    'https://www.imdb.com/search/title/?title_type=tv_series&num_votes=100000,&sort=user_rating,desc&start=101&ref_=adv_nxt')
 scrap()
-
