@@ -90,21 +90,42 @@ width: 80%;
     text-align: right;
     width: 30%;
     float: right;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .busca input{
-    background-image: url(../img/search.png);
+    
     background-repeat: no-repeat;
     background-position: 96%;
     padding: 12px;
     width: 220px;
-    margin-top: 8px;
+    margin-top: 6px;
     height: 36px;
     border: 2px solid grey;
+    
+    
 }
 
 .col-100 {
  width: 100%;
  float: left;
  position: relative;
+}
+.btn{
+    width: 31.8px;
+    height: 31.8px;
+    background-repeat: no-repeat;   
+    background-image: url(../img/search.png);
+    float: right;
+    margin-top: 6px;
+    border: 2px solid gray;
+    cursor: pointer;
+}
+
+.btn:hover{
+    border-color: #12d8da;
+}
+.busca input:focus{
+    border: solid #12d8da;
+    
 }
