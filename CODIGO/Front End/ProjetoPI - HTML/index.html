@@ -1,5 +1,6 @@
 <html>
     <head>
+        <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="./css/main.css">
         <title>Projeto Integrador</title>
     </head>
@@ -70,8 +71,21 @@
     
               </div>
               <div class="busca">
-                <input placeholder="Search Something" type="text"/>
+                <input placeholder="Search Something" type="search" id="text" list="historico"/>
+                
+                <datalist id="historico">
+                    
+                    <option value="Melhores Notas"></option>
+                    <option value="Lista por Gêneros"></option>
+                    <option value="Ano de Lançamento"></option>
+                    
+                  </datalist>
+                <div class="btn">
+        
               </div>
+              
+                
+              
             </div>
           </main>
        </body>
