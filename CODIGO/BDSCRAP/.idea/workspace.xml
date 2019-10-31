@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02afa366-c2f1-4d0a-a7df-21aa5ef40588" name="Default Changelist" comment="" />
+    <list default="true" id="18b66bf6-b944-4377-88c9-782daff91fae" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +15,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectId" id="1SwUHP9GD0kl7GcWCkgUGx85ZNG" />
+  <component name="ProjectId" id="1SxDrpAc6zUS0NTW4cpwC7HCGkR" />
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -30,7 +30,7 @@
   </component>
   <component name="RunManager">
     <configuration name="BD" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="BDSCRAP" />
+      <module name="BDscrap" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -61,11 +61,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="02afa366-c2f1-4d0a-a7df-21aa5ef40588" name="Default Changelist" comment="" />
-      <created>1572474062157</created>
+      <changelist id="18b66bf6-b944-4377-88c9-782daff91fae" name="Default Changelist" comment="" />
+      <created>1572496554974</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1572474062157</updated>
+      <updated>1572496554974</updated>
     </task>
     <servers />
   </component>

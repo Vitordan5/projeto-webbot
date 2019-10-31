@@ -28,5 +28,5 @@ for date in year :
 notes = []
 for num in note:
     notes.append(num.text.strip())
-#print(notes)
+print(notes)
 

@@ -8,6 +8,7 @@ class TvBrowsingCategory(Enum):
     most_popular = "tv-list-2"
     certified_fresh = "tv-list-3"
 
+
 class RottenTomatoesClient:
     BASE_URL = "https://www.rottentomatoes.com/api/private"
     BASE_V1_URL = "{base_url}/v1.0".format(base_url=BASE_URL)
@@ -36,6 +37,36 @@ for x in result["results"]:
     nota = str(x['tomatoScore'])
     linha = titulo + ';' + nota + '\n'
     with open('popular.csv', 'a') as s:
+        s.write(linha)
+
+
+class RottenTomatoesClient:
+    BASE_URL = "https://www.rottentomatoes.com/api/private"
+    BASE_V1_URL = "{base_url}/v1.0".format(base_url=BASE_URL)
+    BASE_V2_URL = "{base_url}/v2.0".format(base_url=BASE_URL)
+    MOVIE_DETAILS_URL = "{base_url}/movies".format(base_url=BASE_V1_URL)
+    SEARCH_URL = "{base_url}/search".format(base_url=BASE_V2_URL)
+    BROWSE_URL = "{base_url}/browse".format(base_url=BASE_V2_URL)
+
+    def __init__(self):
+        pass
+
+    def browse_tv_shows1(category=TvBrowsingCategory.new_tv_tonight):
+        r = requests.get(url=RottenTomatoesClient.BROWSE_URL, params={"type": category.value})
+
+        r.raise_for_status()
+
+        return r.json()
+
+
+with open('new.csv', 'a') as s:
+    s.write('SERIES;NOTAS\n')
+result = RottenTomatoesClient.browse_tv_shows1()
+data = json.dumps(result, indent=2)
+for x in result["results"]:
+    titulo = str(x['title'])
+    linha = titulo + ';' + '\n'
+    with open('new.csv', 'a') as s:
         s.write(linha)
 
 results = requests.get(
