@@ -17,8 +17,8 @@ Trabalho realizado pelos alunos da FATEC/SJC do 1º Semestre/2019. Consiste na c
 3. Faça o clone do projeto com git clone https://gitlab.com/Jeferson.Constantino/projeto-webbot.git
 
 # Documentação
-IMDb: https://www.imdb.com/
-Rotten Tomatoes: https://www.rottentomatoes.com/
+1. IMDb: https://www.imdb.com/
+2. Rotten Tomatoes: https://www.rottentomatoes.com/
 
 
 # Contribuintes
@@ -27,7 +27,7 @@ Rotten Tomatoes: https://www.rottentomatoes.com/
 - Jeferson Constantino: https://gitlab.com/Jeferson.Constantino
 - Vitor Daniel Silva: https://gitlab.com/VitorDan
 
-#Agradecimentos
+# Agradecimentos
 - Paulo Pereira: https://gitlab.com/pauloprj
 - Jéssica Martimiano: https://gitlab.com/martimianojessica
 
