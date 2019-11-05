@@ -22,12 +22,12 @@ Rotten Tomatoes: https://www.rottentomatoes.com/
 
 
 # Contribuintes
-Fernanda Ramos: https://gitlab.com/ferpsalles
-Gabriela Momilli: https://gitlab.com/gabsmomilli
-Jeferson Constantino: https://gitlab.com/Jeferson.Constantino
-Vitor Daniel Silva: https://gitlab.com/VitorDan
+- Fernanda Ramos: https://gitlab.com/ferpsalles
+- Gabriela Momilli: https://gitlab.com/gabsmomilli
+- Jeferson Constantino: https://gitlab.com/Jeferson.Constantino
+- Vitor Daniel Silva: https://gitlab.com/VitorDan
 
 #Agradecimentos
-Paulo Pereira: https://gitlab.com/pauloprj
-Jéssica Martimiano: https://gitlab.com/martimianojessica
+- Paulo Pereira: https://gitlab.com/pauloprj
+- Jéssica Martimiano: https://gitlab.com/martimianojessica
 
