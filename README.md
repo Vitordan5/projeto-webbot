@@ -5,16 +5,17 @@ Trabalho realizado pelos alunos da FATEC/SJC do 1º Semestre/2019. Consiste na c
 - Git Bash
 - Visual Code ou PyCharm
 
-## Requerimentos
+## Requerimentos (Instalação de bibliotecas)
 - Python
 - Pip install Beautiful Soup
 - Pip install Requests
 - Pip install Flask
 
-## Instalação
+## Instalação do projeto/ Funcionalidade
 1. Crie uma pasta no seu computador
 2. Abra o terminal 
 3. Faça o clone do projeto com git clone https://gitlab.com/Jeferson.Constantino/projeto-webbot.git
+4. Abrir a pasta 'projeto-webbot'
 
 # Documentação
 1. IMDb: https://www.imdb.com/
