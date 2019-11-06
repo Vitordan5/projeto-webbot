@@ -1,0 +1,134 @@
+body{
+width: 100%;
+height: 100%;
+background-color: black;
+margin: 0%;
+}
+
+ul {
+    padding: 0px!important;
+}
+
+.menu-principal {
+width: 100%;
+background-color: #252323;
+height: 60px;
+}
+main{
+margin: 0 auto;
+width: 980px;
+position: relative;
+}
+
+.logo {
+    height: 100%;
+    float: left;
+padding: 16px;
+width: 80%;
+}
+
+.redes-sociais ul li {
+    margin-left: 18px;
+    display: inline-block;
+    float: left;
+    list-style: none;
+
+}
+
+.redes-sociais {
+    width: 100%;
+    padding: 2px;
+}
+
+.redes-sociais ul li:hover{
+    color: #12d8da;
+    border-bottom: 2px solid #12d8da;
+}
+.header2 {
+    width: 980px;
+    margin: 0 auto;
+    padding: 16px;
+}
+.menu-urls {
+    height: 80px;
+}
+
+
+
+.menu ul li {
+    display: inline-block;
+    color: grey;
+    margin-left: 22px;
+    
+}
+
+.menu ul li:hover {
+    border-bottom: 2px solid #12d8da;
+   
+}
+
+.menu ul li a {
+    color: grey;
+    text-decoration: none;
+    font-size: 17px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+   
+}
+
+.menu ul li a:hover {
+ color: #12d8da;
+ 
+}
+.menu {
+    width: 70%;
+    float: left;
+}
+.busca {
+    text-align: right;
+    width: 30%;
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.busca input{
+    
+    background-repeat: no-repeat;
+    background-position: 96%;
+    padding: 12px;
+    width: 220px;
+    margin-top: 6px;
+    height: 36px;
+    border: 2px solid grey;
+    
+    
+}
+
+.col-100 {
+ width: 100%;
+ float: left;
+ position: relative;
+}
+.btn{
+    width: 31.8px;
+    height: 31.8px;
+    background-repeat: no-repeat;   
+    background-image: url(../img/search.png);
+    float: right;
+    margin-top: 6px;
+    border: 2px solid gray;
+    cursor: pointer;
+}
+
+.btn:hover{
+    border-color: #12d8da;
+}
+.busca input:focus{
+    border: solid #12d8da;
+    
+}
+.redes-sociais img{
+    height: 28px;
+}
