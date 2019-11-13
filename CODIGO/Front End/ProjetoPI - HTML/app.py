@@ -18,8 +18,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-
     data = scrapping()
     return render_template('index.html', data=data)
+
 
 app.run(debug=True)

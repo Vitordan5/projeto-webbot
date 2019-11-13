@@ -1,11 +1,12 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="./css/main.css">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename = 'css/main.css')}}">
         <title>Projeto Integrador</title>
     </head>
 
     <body>
+
        <header class="menu-principal">
         <main>
             <div class="header-1">
@@ -20,7 +21,7 @@
                   <ul>
                       <li>
                           <a href="https://gitlab.com/Jeferson.Constantino/projeto-webbot" target="_blank">
-                              <img src="./img/Git-Logo-White.png"/>
+                              <img src="{{ url_for('static',filename = 'img/Git-Logo-White.png')}}"/>
                             </a>
                         
                   </ul>
@@ -73,6 +74,9 @@
               
             </div>
           </main>
+    {% for serie in data %}
+  <li>{{serie}}</li>
+{% endfor %}
        </body>
 
 
