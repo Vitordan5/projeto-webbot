@@ -1,27 +1,26 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename = 'css/main.css')}}">
+        <link rel="stylesheet" type="text/css" href="../static/css/main.css">
         <title>Projeto Integrador</title>
     </head>
 
     <body>
-
        <header class="menu-principal">
+         
         <main>
+          
             <div class="header-1">
             
 
-                <div class="logo">
-                <img src="./img/logo.png">
-                </div>
+                
 
                 
                 <div class="redes-sociais">
                   <ul>
                       <li>
                           <a href="https://gitlab.com/Jeferson.Constantino/projeto-webbot" target="_blank">
-                              <img src="{{ url_for('static',filename = 'img/Git-Logo-White.png')}}"/>
+                              <img src="../static/img/Git-Logo-White.png"/>
                             </a>
                         
                   </ul>
@@ -32,30 +31,15 @@
    
           </header>
           <main class="col-100 menu-urls">
-            <div class="header2">
-              <div class="menu">
-                <ul>
-                  <li>
-                    <a href="">Home</a>
-                  </li>
-                  <li>
-                    <a href="">About</a>
-                  </li>
-                  <li>
-                    <a href="">Service</a>
-                  </li>
-                  <li>
-                    <a href="">Pages</a>
-                  </li>
-                  <li>
-                    <a href="">Blog</a>
-                  </li>
-                  <li>
-                    <a href="">Contact Us</a>
-                  </li>
-                </ul>
-    
-              </div>
+           
+              
+              <div class="logo">
+                  <img src="../static/img/logo.png">
+                  </div>
+
+                         
+          </main>
+          <main class="searchh">
               <div class="busca">
                 <input placeholder="Search Something" type="search" id="text" list="historico"/>
                 
@@ -66,17 +50,19 @@
                     <option value="Ano de Lançamento"></option>
                     
                   </datalist>
-                <div class="btn">
-        
-              </div>
-              
-                
-              
-            </div>
-          </main>
-    {% for serie in data %}
-  <li>{{serie}}</li>
-{% endfor %}
+                <div class="btn"> 
+                  </main>
+                  
+    
+  </div>
+ <main class="melhor">
+    <div class="vai">
+      <div class="pfv">
+        {% for serie in data %}
+        <li>{{serie}}</li>
+      {% endfor %}
+         </div>
+</main>
        </body>
 
 
