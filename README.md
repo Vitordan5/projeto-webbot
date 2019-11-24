@@ -6,16 +6,16 @@ Trabalho realizado pelos alunos da FATEC/SJC do 1º Semestre/2019. Consiste na c
 - Visual Code ou PyCharm
 
 ## Requerimentos (Instalação de bibliotecas)
-- Python
-- Pip install Beautiful Soup
-- Pip install Requests
-- Pip install Flask
+- Python 3
+- Pip3
 
 ## Instalação do projeto/ Funcionalidade
 1. Crie uma pasta no seu computador
 2. Abra o terminal 
 3. Faça o clone do projeto com git clone https://gitlab.com/Jeferson.Constantino/projeto-webbot.git
 4. Abrir a pasta 'projeto-webbot'
+5. Abrir o diretório: CÓDIGO/Front End/ProjetoPI - HTML
+6. Instalar as dependências através do pip3: pip3 install bs4, pip3 install requests, pip3 install flask
 
 # Documentação
 1. IMDb: https://www.imdb.com/
