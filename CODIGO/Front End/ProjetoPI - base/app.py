@@ -58,6 +58,7 @@ def searchTitle(title):
     return jsonify(series)
 
 @app.route('/search/genre/<genre>')
+@cross_origin()
 def searchGenre(genre):
     auth = ("couchdb", "couchdb")
     j = {
@@ -70,23 +71,49 @@ def searchGenre(genre):
     r = requests.post("http://localhost:5984/series/_find",
                       json=json.loads(str(j).replace("'", "\"")), auth=auth)
     j2 = json.loads(r.text)
+    series = list()
+    for j in j2['docs']:
+        series.append(json.loads(json.dumps(Series(j['title'], j['genre'], j['year'], j['notes']).__dict__)))
     print(r.status_code)
-    return jsonify(j2)
+    return jsonify(series)
 
-@app.route('/search/year/<ano>')
-def searchYear(ano):
+@app.route('/search/year/<year>')
+@cross_origin()
+def searchYear(year):
     auth = ("couchdb", "couchdb")
     j = {
         "selector": {
             "year": {
-                "$gte": int(ano)
+                "$eq": int(year)
             }
         }
     }
     r = requests.post("http://localhost:5984/series/_find",
                       json=json.loads(str(j).replace("'", "\"")), auth=auth)
     j2 = json.loads(r.text)
+    series = list()
+    for j in j2['docs']:
+        series.append(json.loads(json.dumps(Series(j['title'], j['genre'], j['year'], j['notes']).__dict__)))
     print(r.status_code)
-    return jsonify(j2)
+    return jsonify(series)
+@app.route('/search/notes/<notes>')
+@cross_origin()
+def searchNotes(notes):
+    auth = ("couchdb", "couchdb")
+    j = {
+        "selector": {
+            "notes": {
+                "$eq": float(notes)
+            }
+        }
+    }
+    r = requests.post("http://localhost:5984/series/_find",
+                      json=json.loads(str(j).replace("'", "\"")), auth=auth)
+    j2 = json.loads(r.text)
+    series = list()
+    for j in j2['docs']:
+        series.append(json.loads(json.dumps(Series(j['title'], j['genre'], j['year'], j['notes']).__dict__)))
+    print(r.status_code)
+    return jsonify(series)
 
 app.run(debug=True)
