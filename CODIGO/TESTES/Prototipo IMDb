@@ -1,8 +1,0 @@
-def readsite(link):
-    from urllib.request import urlopen
-    x = urlopen(link)
-    y = x.read()
-    return y.decode('utf-8')
-
-
-print(readsite('https://www.imdb.com/search/title/?genres=sci-fi&explore=title_type,genres&title_type=tvSeries&ref_=adv_explore_rhs'))
